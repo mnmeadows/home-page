@@ -44,20 +44,24 @@ body {
 }
 
 #hero .hero-content {
-	height: 60vh;
+	height: 100vh;
 	text-align: left;
-	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	flex-direction: column;
+	padding-top: 20%;
+	margin: 0 3% 0 10%
 }
 
 .hero-content h1 {
-	font-size: 40px;
+	font-family: forma-djr-display, sans-serif;
 	font-weight: 700;
+	font-size: 50px;
+	letter-spacing: 3px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	color: #fff;
+	overflow-wrap: break-word
 }
 
 .hero-content .desktop {
@@ -73,17 +77,22 @@ body {
 	.hero-content .mobile {
 		display: block
 	}
+	#hero .hero-content {
+		margin: 0 3%
+	}
 }
 
 .hero-content p {
-	font-size: 14px;
-	letter-spacing: 3px;
-	margin: 0 0 30px 0;
+	font-family: forma-djr-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin: 6px 0 30px 0;
 	padding: 0;
 	text-transform: capitalize;
 	color: #fff;
-	font-weight: 500;
-	line-height: 24px
+	line-height: 24px;
 }
 
 .hero-content a {
@@ -100,7 +109,7 @@ body {
 }
 .hero-content .list-social li i {
 	color: #fff;
-	font-size: 15px;
+	font-size: 22px;
 }
 
 #hero #bottom {
@@ -119,23 +128,29 @@ body {
 	text-transform: uppercase;
 	color: white
 }
+#hero #bottom a:hover {
+	background: white;
+	color: #333232
+}
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#main {
+	background-color: #02130a
+}
+
 #services {
 	background: #02130a;
-	position: relative;
-	padding-bottom: 33px;
+	padding: 33px 0;
+	display: flex;
+	align-items: center;
+	height: 100vh
 }
 @media only screen and (min-width: 992px) {
 	#services {
 		padding-top: 15px
 	}
-}
-
-.services-block {
-	padding: 0 53px
 }
 
 .services-block span {
@@ -200,41 +215,41 @@ body {
 	width: 100%;
 }
 
-#journal .journal-block .journal-info {
+.journal-info {
 	position: relative;
 	height: 225px;
 	overflow: hidden;
 	margin: 0 0 12px
 }
 
-.journal-block .journal-info:hover > .journal-txt {
+.journal-info:hover > .journal-txt {
 	display: none;
 	transition: ease-in-out 1s;
 }
 
-.journal-block .journal-info img:hover {
+.journal-info img:hover {
 	filter: grayscale(0%);
 	transform: scale(1.1);
 	transition: ease-in-out 1s;
 }
-.journal-block .journal-info img {
+.journal-info img {
 	width: 115%;
 	object-fit: cover;
 	filter: grayscale(100%);
 }
 
-.journal-block #travel .journal-info img{
+#travel .journal-info img{
 	position: absolute;
 	top: -99px
 }
 
-.journal-block .journal-info .journal-txt {
+.journal-info .journal-txt {
 	position: absolute;
 	width: 100%;
 	bottom: 18px;
 }
 
-.journal-block .journal-info .journal-txt h4 {
+.journal-info .journal-txt h4 {
 	display: block;
 	font-size: 19px;
 	line-height: 24px;
@@ -245,7 +260,7 @@ body {
 	padding: 18px 0
 }
 
-.journal-block .col-lg-4 {
+.col-lg-4 {
 	margin-top: 0px
 }
 @media only screen and (min-width: 992px) {
